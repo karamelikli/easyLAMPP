@@ -113,9 +113,10 @@ sudolama "apt-get remove --purge php5-mysql  -y"
 sudolama "apt-get remove --purge mysql-server -y"
 sudolama "apt-get remove --purge libapache2-mod-php5 -y"
 sudolama "apt-get remove --purge php5 -y"
+sudolama "apt-get remove --purge php* -y"
 sudolama "apt-get remove --purge apache2 -y"
 sudolama "apt-get update && apt-get upgrade"
-chackkur  "kate" "gedit"  "apache2" "php php7.2-mysql php7.2-curl php7.2-json php7.2-cgi  php7.2 libapache2-mod-php7.2" "libapache2-mod-php" "mysql-server" "php-mysql" "php-curl php-soap php-mcrypt php-xdebug php-zip" "sysbench" " php-pear php-dev libmysqlclient-dev" 
+chackkur  "kate" "gedit"  "apache2" "php php7.4-mysql php7.4-curl php7.4-json php7.4-cgi  php7.4 libapache2-mod-php7.4" "libapache2-mod-php" "mysql-server" "php-mysql" "php-curl php-soap php-mcrypt php-xdebug php-zip" "sysbench" "php-pear php-dev libmysqlclient-dev" "php-curl php7-curl" "libapache2-mod-php7.4 php7.4-mbstring php-intl"
 sudolama "a2enmod rewrite"
 
 anladinmi $bldred" Open (Installer will open it for you!) the 000-default.conf file and replace following row.  $bldblu \n
@@ -135,7 +136,8 @@ anladinmi   $txtylw$txtbld" did you changed it?"$txtrst
 sudolama "service apache2 restart"
 
 
-chackkur "curl" "libcurl3" "libcurl3-dev" "php-curl php5-curl"
+chackkur "curl" "libcurl3" "libcurl3-dev"
+
 echo "Tamam $devam";
 echo "Dont hurry!!!! DUR BU NE ACELE?!"
 sudolama "apt-get update"
@@ -166,7 +168,7 @@ sudolama "gedit /etc/hosts"
 anladinmi   $txtylw$txtbld" did you changed it?"$txtrst
 
 sudolama "service apache2 restart"
-chackkur "php5-gd"
+chackkur "php7-gd"
 
 sudo sh -c 'echo "ServerName localhost" >> /etc/apache2/conf.d/name' && sudo service apache2 restart
 
