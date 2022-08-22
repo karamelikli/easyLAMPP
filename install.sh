@@ -168,7 +168,7 @@ sudolama "gedit /etc/hosts"
 anladinmi   $txtylw$txtbld" did you changed it?"$txtrst
 
 sudolama "service apache2 restart"
-chackkur "php7-gd"
+chackkur "php8-gd"
 
 sudo sh -c 'echo "ServerName localhost" >> /etc/apache2/conf.d/name' && sudo service apache2 restart
 
