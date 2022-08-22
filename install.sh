@@ -116,7 +116,7 @@ sudolama "apt-get remove --purge php5 -y"
 sudolama "apt-get remove --purge php* -y"
 sudolama "apt-get remove --purge apache2 -y"
 sudolama "apt-get update && apt-get upgrade"
-chackkur  "kate" "gedit"  "apache2" "php php7.4-mysql php7.4-curl php7.4-json php7.4-cgi  php7.4 libapache2-mod-php7.4" "libapache2-mod-php" "mysql-server" "php-mysql" "php-curl php-soap php-mcrypt php-xdebug php-zip" "sysbench" "php-pear php-dev libmysqlclient-dev" "php-curl php7-curl" "libapache2-mod-php7.4 php7.4-mbstring php-intl"
+chackkur  "kate" "gedit"  "apache2" "php php8.1-mysql php8.1-curl php8.1-json php8.1-cgi  php8.1 libapache2-mod-php8.1" "libapache2-mod-php" "mysql-server" "php-mysql" "php-curl php-soap php-mcrypt php-xdebug php-zip" "sysbench" "php-pear php-dev libmysqlclient-dev" "php-curl php8-curl" "libapache2-mod-php8.1 php8.1-mbstring php-intl" 
 sudolama "a2enmod rewrite"
 
 anladinmi $bldred" Open (Installer will open it for you!) the 000-default.conf file and replace following row.  $bldblu \n
