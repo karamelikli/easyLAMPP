@@ -11,5 +11,6 @@ This installation script includes **PHP, Apache, MySql, PhpMyadmin, pear**, and 
 This solution belongs to the previous version of MySQL. By logging in to MySQL using socket authentication, you can do it.
 
 sudo mysql -u root
+
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
